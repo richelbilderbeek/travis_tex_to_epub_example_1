@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Convert the example to EPUB and check if that has been successfull
+# Works similar to .travis.yml script, but used for local testing
+
+pandoc example.tex -o example.epub
+epubcheck example.epub

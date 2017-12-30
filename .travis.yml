@@ -1,0 +1,6 @@
+install:
+  - sudo apt-get install pandoc texlive-latex-recommended texlive-latex-extra texlive-fonts-extra texlive-fonts-recommended epubcheck
+
+script:
+  - pandoc example.tex -o example.epub
+  - epubcheck example.epub
