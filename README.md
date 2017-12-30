@@ -10,10 +10,10 @@ This GitHub is part of [the Travis Tutorial](https://github.com/richelbilderbeek
 
 It shows that using `tex4ebook` is superior over using `pandoc`
 
-## Comparison, when using `pandoc`
+## Comparison
 
 Feature|`pandoc`|`tex4ebook`
----|---
+---|---|---
 TOC|Not shown implicity, but is present in sidebar|Present
 Abstract|Absent|Present
 Bibliography|Absent|Present
@@ -33,3 +33,4 @@ See the three documents here:
 ## External links
 
  * [![Build Status](https://travis-ci.org/richelbilderbeek/travis_tex_to_epub.svg?branch=master)](https://travis-ci.org/richelbilderbeek/travis_tex_to_epub) [travis_tex_to_epub](https://github.com/richelbilderbeek/travis_tex_to_epub): overview of examples
+ * [![Build Status](https://travis-ci.org/michal-h21/tex4ebook.svg?branch=master)](https://travis-ci.org/michal-h21/tex4ebook) [tex4ebook](https://github.com/michal-h21/tex4ebook)
