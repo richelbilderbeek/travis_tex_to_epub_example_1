@@ -164,14 +164,23 @@ Without a \verb;figure; environment:
 
 The PDF version and EPUB version display the figure identically.
 
-With a \verb;figure; environment:
-	
+Cannot use a \verb;figure; environment:
+
+\begin{lstlisting}[
+  label=lst:figure_environment,
+  caption=Caption of listing of LaTeX code how to display the figure in a figure environment,
+  captionpos=below,
+  language=C++,showstringspaces=false,frame=single
+]
 \begin{figure}[H]
   \centering
   \includegraphics[scale=1.0]{TravisCI.png}
   \caption{Label of figure in a figure environment}
   \label{fig:png}
 \end{figure}
+\end{lstlisting}
+
+	
 
 The PDF version centers the image and its label.
 The EPUB version puts the image at the left of the text, shows the caption with the default font.
