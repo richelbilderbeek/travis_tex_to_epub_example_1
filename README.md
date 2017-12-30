@@ -10,19 +10,35 @@ This GitHub is part of [the Travis Tutorial](https://github.com/richelbilderbeek
 
 It shows that using `tex4ebook` is superior over using `pandoc`
 
-## Comparison
+## Comparison, when viewed with `calibre`
 
 Feature|`pandoc`|`tex4ebook`
 ---|---|---
 TOC|Not shown implicity, but is present in sidebar|Present
 Abstract|Absent|Present
 Bibliography|Absent|Present
+Equations|Shows LaTex code|Shown correctly
 Tables|Not horizontal nor vertical lines, no caption|Shown correctly
 Listings|Code is shown in default font, captions absent|monospaced font, captions shown
 Figures|PNG can be shown, but not in `figure` environment|PNG can be show, did not test for `figure` environment
 Referencing to table or figure|Shows LaTex code|Shows number and hyperlink
 Quoting citations|Quotations (`[1]`) not shown|Shown correctly
 TikZ|Shows LaTex code|Shown correctly
+
+## Comparison, when viewed on Kobo Aura
+
+Feature|`pandoc`|`tex4ebook`
+---|---|---
+TOC|Not shown implicity, but is present in sidebar|Present
+Abstract|Absent|Present
+Bibliography|Absent|Present
+Equations|Shows LaTex code|Shown thinly, but correctly (have not tried greek symbols)
+Tables|Not horizontal nor vertical lines, no caption|Only horizontal lines
+Listings|Code is shown in default font, captions absent|default font, captions shown
+Figures|PNG can be shown, but not in `figure` environment|PNG can be show, did not test for `figure` environment
+Referencing to table or figure|Shows LaTex code|Shows number and hyperlink
+Quoting citations|Quotations (`[1]`) not shown|Shown correctly
+TikZ|Shows LaTex code|Node labels shown correctly, greek edge labels shown incorrectly, some dots instead of lines
 
 See the three documents here:
 
