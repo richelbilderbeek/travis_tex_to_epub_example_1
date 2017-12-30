@@ -11,8 +11,8 @@ This GitHub is part of [the Travis Tutorial](https://github.com/richelbilderbeek
 Feature|Works without extra work
 ---|---
 TOC|?
-Tables|?
-Figures|?
+Tables|Does not show horizontal nor vertical lines
+Figures|PNG works
 Referencing to table|?
 Referencing to figure|?
 TikZ|?

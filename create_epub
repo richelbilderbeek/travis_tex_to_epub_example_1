@@ -14,3 +14,14 @@ if [ ! -e example.epub ]; then echo "EPUB not created"; exit 1; fi
 echo "Check EPUB"
 
 epubcheck example.epub
+
+echo "Create PDF (for comparison)"
+
+# pandoc example.tex -o example.pdf
+
+pdflatex example.tex --shell-escape
+bibtex example.aux
+pdflatex example.tex --shell-escape
+pdflatex example.tex --shell-escape
+
+if [ ! -e example.pdf ]; then echo "PDF not created"; exit 1; fi
