@@ -3,5 +3,14 @@
 # Convert the example to EPUB and check if that has been successfull
 # Works similar to .travis.yml script, but used for local testing
 
+if [ -e example.epub ]; then echo "Remove old EBPUB"; rm example.epub; fi
+
+echo "Create EPUB"
+
 pandoc example.tex -o example.epub
+
+if [ ! -e example.epub ]; then echo "EPUB not created"; exit 1; fi
+
+echo "Check EPUB"
+
 epubcheck example.epub
