@@ -19,11 +19,12 @@ install:
   
 
 script:
+  - ./create_epub
   # pandoc
-  - rm example_pandoc.epub
-  - pandoc example.tex -o example_pandoc.epub
-  - epubcheck example_pandoc.epub
+  #- rm example_pandoc.epub
+  #- pandoc example.tex -o example_pandoc.epub
+  #- epubcheck example_pandoc.epub
   # tex4ebook
-  - tex4ebook example.tex
-  - epubcheck example.epub
+  #- tex4ebook example.tex
+  #- epubcheck example.epub
 

@@ -25,7 +25,7 @@ Referencing to table or figure|Shows LaTex code|Shows number and hyperlink
 Quoting citations|Quotations (`[1]`) not shown|Shown correctly
 TikZ|Shows LaTex code|Shown correctly
 
-## Comparison, when viewed on Kobo Aura
+## Comparison, when viewed on Kobo Aura Edition 2
 
 Feature|`pandoc`|`tex4ebook`
 ---|---|---
