@@ -7,7 +7,7 @@ if [ -e example.epub ]; then echo "Remove old EBPUB"; rm example.epub; fi
 
 echo "Create EPUB"
 
-pandoc example.tex -o example.epub
+tex4ebook example.tex
 
 if [ ! -e example.epub ]; then echo "EPUB not created"; exit 1; fi
 
